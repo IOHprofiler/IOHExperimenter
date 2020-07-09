@@ -1,0 +1,13 @@
+.. _exhale_define_f__weierstrass_8hpp_1a18749745931e068554050348303e1c0d:
+
+Define F_WEIERSTRASS_SUMMANDS
+=============================
+
+- Defined in :ref:`file_src_Problems_BBOB_f_weierstrass.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: F_WEIERSTRASS_SUMMANDS

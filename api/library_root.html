@@ -1,0 +1,2168 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Library API &mdash; IOHexperimenter 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct f_gallagher_permutation_t" href="structf__gallagher__permutation__t.html" />
+    <link rel="prev" title="Welcome to IOHexperimenter’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> IOHexperimenter
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Library API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structf__gallagher__permutation__t.html">Struct f_gallagher_permutation_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structf__gallagher__permutation__t1.html">Struct f_gallagher_permutation_t1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class___dict.html">Class _Dict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_attractive___sector.html">Class Attractive_Sector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_b_b_o_b__suite.html">Class BBOB_suite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_bent___cigar.html">Class Bent_Cigar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_bueche___rastrigin.html">Class Bueche_Rastrigin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_coco___transformation___data.html">Class Coco_Transformation_Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_concatenated___trap.html">Class Concatenated_Trap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_different___powers.html">Class Different_Powers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_discus.html">Class Discus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_ellipsoid.html">Class Ellipsoid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_ellipsoid___rotated.html">Class Ellipsoid_Rotated</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_gallagher101.html">Class Gallagher101</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_gallagher21.html">Class Gallagher21</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classgeneric_generator.html">Template Class genericGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_griewank___rosen_brock.html">Class Griewank_RosenBrock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__configuration.html">Class IOHprofiler_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__csv__logger.html">Class IOHprofiler_csv_logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__experimenter.html">Template Class IOHprofiler_experimenter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__observer.html">Class IOHprofiler_observer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__problem.html">Template Class IOHprofiler_problem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__random.html">Class IOHprofiler_random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__suite.html">Template Class IOHprofiler_suite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_i_o_hprofiler__transformation.html">Class IOHprofiler_transformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_ising___ring.html">Class Ising_Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_ising___torus.html">Class Ising_Torus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_ising___triangular.html">Class Ising_Triangular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_katsuura.html">Class Katsuura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_l_a_b_s.html">Class LABS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones.html">Class LeadingOnes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___dummy1.html">Class LeadingOnes_Dummy1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___dummy2.html">Class LeadingOnes_Dummy2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___epistasis.html">Class LeadingOnes_Epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___neutrality.html">Class LeadingOnes_Neutrality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___ruggedness1.html">Class LeadingOnes_Ruggedness1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___ruggedness2.html">Class LeadingOnes_Ruggedness2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_leading_ones___ruggedness3.html">Class LeadingOnes_Ruggedness3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_linear.html">Class Linear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_linear___slope.html">Class Linear_Slope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_lunacek___bi___rastrigin.html">Class Lunacek_Bi_Rastrigin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_m_i_s.html">Class MIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_n_k___landscapes.html">Class NK_Landscapes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_n_queens.html">Class NQueens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max.html">Class OneMax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___dummy1.html">Class OneMax_Dummy1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___dummy2.html">Class OneMax_Dummy2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___epistasis.html">Class OneMax_Epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___neutrality.html">Class OneMax_Neutrality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___ruggedness1.html">Class OneMax_Ruggedness1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___ruggedness2.html">Class OneMax_Ruggedness2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_one_max___ruggedness3.html">Class OneMax_Ruggedness3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_p_b_o__suite.html">Class PBO_suite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_rastrigin.html">Class Rastrigin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_rastrigin___rotated.html">Class Rastrigin_Rotated</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classregister_in_factory.html">Template Class registerInFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_rosenbrock.html">Class Rosenbrock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_rosenbrock___rotated.html">Class Rosenbrock_Rotated</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_schaffers10.html">Class Schaffers10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_schaffers1000.html">Class Schaffers1000</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_schwefel.html">Class Schwefel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_sharp___ridge.html">Class Sharp_Ridge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_sphere.html">Class Sphere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_step___ellipsoid.html">Class Step_Ellipsoid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_w___model___leading_ones.html">Class W_Model_LeadingOnes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_w___model___one_max.html">Class W_Model_OneMax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="class_weierstrass.html">Class Weierstrass</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum__i_o_hprofiler__configuration_8h_1a3ed894cd2350c8f1c6266c10de9418d3.html">Enum _LINE_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum__i_o_hprofiler__common_8h_1a8ced63b668f6c1668b42db62456081f5.html">Enum IOH_optimization_type</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a72540a8c316f17b17cf77155e1a5aaef.html">Template Function _toString</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1ab7cc65be3009deafdccbba60680d6b8e.html">Function base_epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae276a15595ea9f7860b823e4229afc5c.html">Function bbob2009_compute_fopt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2a04739df5afb6d6c00049e6f9fe9a72.html">Function bbob2009_compute_rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a5f6d2751aa7b7138ccbad72d2dcd8cfe.html">Function bbob2009_compute_xopt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a0f571b7dae2cb87ee9651a665f36f965.html">Function bbob2009_copy_rotation_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a9176e3ed48baabef3d59abb111e4ce2a.html">Function bbob2009_fmax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2ec6e1c131829dfca561e15a62670578.html">Function bbob2009_fmin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a45b7deee386d39f3a51195a76ecc8b3f.html">Function bbob2009_gauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae9c96bbb068bbafde4c579a67334ac03.html">Function bbob2009_reshape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1aa419105fb5ab1a7d1eca3d036e1db642.html">Function bbob2009_round</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a69567b5718c65b57d0f8e23f87ec8922.html">Function bbob2009_unif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation_8hpp_1a503f1bf4eeccb9233437fb1a765fe807.html">Function coco_tranformation_objs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation_8hpp_1a4a9a333f758840831893b8ce7fa46132.html">Function coco_tranformation_vars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9e8b4501917f11cd589aa07cd3e81a24.html">Template Function compareObjectives(const std::vector&lt;valueType&gt;&amp;, const std::vector&lt;valueType&gt;&amp;, const IOH_optimization_type)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a45f30a5e2becde9c3f0656371c5b020a.html">Template Function compareObjectives(const valueType, const valueType, const IOH_optimization_type)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a7434905a54af524748676b956cb98315.html">Template Function compareVector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a5d38e9efaa7d7eacdacefb91a9c04638.html">Template Function copyVector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a6aa24f3d58b0d0287ce31d2dbd042e38.html">Function dummy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a58127eac2344302678c4f407d95ab379.html">Function epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a9b2f198cb3a7d5a1d0ab685d7b294b99.html">Function epistasis_compute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_f__gallagher21_8hpp_1a5c5d751cfb91fe5547ae75b981f065fd.html">Function f_gallagher_compare_doubles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_f__gallagher101_8hpp_1a24f3aab754bbb64f0a0a9d159867c4a7.html">Function f_gallagher_compare_doubles1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1a969cda1560fc9180c3d21e68afb04faf.html">Function get_int_vector_parse_string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a2429c989d189ec18ebb92ea1a9e962ec.html">Function IOH_error(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a2429c989d189ec18ebb92ea1a9e962ec.html">Function IOH_error(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a94e2eb7a9e2e25c0ce0464881fca803c.html">Function IOH_log(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a8efaa556027d382a0ff55675f63e11a0.html">Function IOH_log(std::string, std::ofstream&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a94e2eb7a9e2e25c0ce0464881fca803c.html">Function IOH_log(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a8efaa556027d382a0ff55675f63e11a0.html">Function IOH_log(std::string, std::ofstream&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a9d1fb3375862ac7dc29b58d84f110022.html">Function IOH_warning(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9d1fb3375862ac7dc29b58d84f110022.html">Function IOH_warning(std::string)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1ad1eef8bddb659c142c117d814f51f464.html">Function layer_compute_ruggedness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1aa75e8574d6c8a0a4f2eaf774593bdc03.html">Function layer_epistasis_compute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a3ad2109730fb6c43eb4701a174904eb8.html">Function layer_neutrality_compute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a2b2e96781c20bed1da12e65041e511eb.html">Function max_gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a5f4f8e331ba2945653c5d531f66c869c.html">Function neutrality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a1c7149337617e29e31e8d9d46e7c3e27.html">Function ruggedness1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a7644a9a22570f976f067ecd88b9133da.html">Function ruggedness2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a4588aad185275cd09ca179c48a308b34.html">Function ruggedness3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a053536933e3f58002ddbb4655def7f36.html">Function ruggedness_raw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_wmodels_8hpp_1a929033aaad173c3ee686e151a1c5f047.html">Function ruggedness_translate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1aa1a5d11ea1755d1046fe4b0c02a65997.html">Function strstrip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a9658e101201758d59e1d7500e1daa8c3.html">Function transform_obj_norm_by_dim_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1aa6ac70641958645c7ea63e568709eef7.html">Function transform_obj_oscillate_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1ae22b9bbd7c154fa2d961d03417320285.html">Function transform_obj_penalize_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a2938164edb2dc9cdaf68cc84a619c331.html">Function transform_obj_power_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a8a88b946b8d7dc9ca795405375a497ce.html">Function transform_obj_scale_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a0d073f17e11124215ea5f276bcc22448.html">Function transform_obj_shift_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a5b211bedd46230c304320b0f724bfa20.html">Function transform_vars_affine_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aab633d5f17a8282cbc39f4034cdc1014.html">Function transform_vars_asymmetric_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa9eb2bb3464240ed469f20fde715f675.html">Function transform_vars_brs_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a6f207b94ef1f046ddad563284880b5c2.html">Function transform_vars_conditioning_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aedab87e6a7bb47f87c398e35e865418f.html">Function transform_vars_oscillate_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a59f848e0dc071ba2977d3a2122006268.html">Function transform_vars_scale_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ab905d67956153bb70c7607d7ac07ec00.html">Function transform_vars_shift_evaluate_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa2a58c3cee81e2de848bf3467a3fa91d.html">Function transform_vars_x_hat_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a65ba1aa534b34e82a8b0d2e9f307a375.html">Function transform_vars_x_hat_generic_evaluate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ad2f9576703436e7d7c0515250979ad9a.html">Function transform_vars_z_hat_evaluate</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_suite__bbob__legacy__code_8hpp_1a973742d29d384e21661bda90875ccf39.html">Variable coco_pi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__platform_8h_1abfb74516c005d04fc05414f90bc648de.html">Variable IOHprofiler_path_separator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1a49324795993510860e3aba2d02d48b0d.html">Variable max_dimension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1ae2fca66559205cf0deddfdc3fffc7140.html">Variable max_number_of_problem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1ad468cb10d7903bd52289143ef041b5de.html">Variable regBBOB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a12fdf8047326b276d6cc0acb99983467.html">Variable regIsing_1D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af7085616ed4cb9129461172d510508c9.html">Variable regIsing_2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a5850b8b0df8907ee88a997cbfa4e1545.html">Variable regIsing_Triangle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a319923dfcb86f5cc128cb14b507bf827.html">Variable regLABS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7206b5da762ae2dd9c1528e989ca7488.html">Variable regLeadingOnes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1afc288963bc5b69967bcac19105b30879.html">Variable regLeadingOnes_Dummy1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a8a009ad28ccb0e038a71a5a28acf0d2a.html">Variable regLeadingOnes_Dummy2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a53ca5e56bfa668c103766aed0f875290.html">Variable regLeadingOnes_Epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1ac81b583258547a2937140537b74d19e2.html">Variable regLeadingOnes_Neutrality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7d4da954ba8bd6a216e392a0b545c5cd.html">Variable regLeadingOnes_Ruggedness1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0090ef095459dfe2671a840172b9abce.html">Variable regLeadingOnes_Ruggedness2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4968411dc3f4c93789cd5e30d499f004.html">Variable regLeadingOnes_Ruggedness3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0c4bb6d8c51c39c261ffefc8ebf012ad.html">Variable regLinear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af5e46930d8db5a621405fd3ec3e6b5d7.html">Variable regMIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a3835806ce6f29fc118fe12f2d86d83d3.html">Variable regNQueens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4e7f8a0425b911bc0f1804223036e18c.html">Variable regOneMax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aecd150c4de053dd679db8403a203d248.html">Variable regOneMax_Dummy1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a83ceed7cda41cedb03487003e8f349e9.html">Variable regOneMax_Dummy2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a2f325afb1dd4bf17bf576caebfd2d153.html">Variable regOneMax_Epistasis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af165c30318c4983c23effe12a65e4df2.html">Variable regOneMax_Neutrality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aa930a6bd7352eac42f6eb31d0587dad9.html">Variable regOneMax_Ruggedness1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a11990cc94de2fa0f790a5f800a627a70.html">Variable regOneMax_Ruggedness2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1abfc52771fb25b89b4787a0aefbde3a15.html">Variable regOneMax_Ruggedness3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1acbdc1d9ef309da360a5de9f7d02c872f.html">Variable regPBO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable__i_o_hprofiler__problem_8h_1a8e01e908e41e6270ffd9b9be2ce64cb8.html">Variable transformation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8cpp_1ad84318ad71c20e7b5a4af037e3a330d5.html">Define _IOHPROFILER_COMMON_CPP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a6109158b8a720c7e8b1bcc516682cddf.html">Define DEFAULT_DIMENSION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a3d0780778ed0748fc4769d998edaf185.html">Define DEFAULT_INSTANCE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ab4da29b2c029e05522638c638f1db25c.html">Define DEFAULT_PROBLEM_ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2de21eb687a4fd2ea6c1d5d7fb3a6e8d.html">Define DEFAULT_SEED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_f__weierstrass_8hpp_1a18749745931e068554050348303e1c0d.html">Define F_WEIERSTRASS_SUMMANDS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a61b1f3d36ae91d52664e0d8019b0552b.html">Define IOH_PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2f39e943462a370926c15bac5919f3ba.html">Define IOHPROFILER_LONG_LAG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1aebdf5dc0572ce5a3e8c957220f3e07c2.html">Define IOHprofiler_MAX_DIMENSION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a95e2e1ac04fcb791dd078a8a64d84167.html">Define IOHprofiler_NORMAL_POLAR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a16bc7f529c324e050561e97c82ab788d.html">Define IOHprofiler_PATH_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1aae7a5b8cad1936da10175ab1d6cb3e1a.html">Define IOHPROFILER_SHORT_LAG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ad4d796b98c583d49e83adabd74a63bf6.html">Define MAX_BUFFER_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1a59bea9bfad99ad3e51f97667d7c5b18f.html">Define MAXKEYNUMBER</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1ae310f74f793edeb882f0c2d8d8b50bb8.html">Define MAXLINESIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1ab23f1b3c64f3eb9b6321ad80a3aa700f.html">Define RND_MOD_MULTIPLIER</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a25a3b1332e15355d3ce940b2b9711824.html">Define RND_MODULUS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a6db8e7e89b4ccba78b78bae2fa4cae16.html">Define RND_MODULUS_DIV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a4a9daae28c93665de8531ea553a1a3eb.html">Define RND_MULTIPLIER</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_suite__bbob__legacy__code_8hpp_1a30f5ab8c8eebf32a5ef95bf3d5297c6d.html">Define SUITE_BBOB2009_MAX_DIM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef__i_o_hprofiler__class__generator_8h_1a2971ef230f593894266554092d5bca4c.html">Typedef defaultIDKeyType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_f__gallagher21_8hpp_1af0bac0f1113d1810ec11a4ea08affcc3.html">Typedef F_GALLAGHER_PERMUTATION_T</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_f__gallagher101_8hpp_1a605accbff34f39b4eef3935aaa2cabf1.html">Typedef F_GALLAGHER_PERMUTATION_T1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef__i_o_hprofiler__configuration_8h_1aea3cb56ac9b0612afc040462b05b390a.html">Typedef linecontent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a637e30d728990d4faae94a7d357a01f4.html">Typedef PROBLEM_ID_NAME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a53e7653f098d0336dca41cf3e9c43d3f.html">Typedef PROBLEM_NAME_ID</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IOHexperimenter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Library API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/library_root.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="library-api">
+<h1>Library API<a class="headerlink" href="#library-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="class-hierarchy">
+<h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="class-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li>Struct <a href="structf__gallagher__permutation__t.html#exhale-struct-structf-gallagher-permutation-t">f_gallagher_permutation_t</a></li><li>Struct <a href="structf__gallagher__permutation__t1.html#exhale-struct-structf-gallagher-permutation-t1">f_gallagher_permutation_t1</a></li><li>Class <a href="class___dict.html#exhale-class-class--dict">_Dict</a></li><li>Class <a href="class_attractive___sector.html#exhale-class-class-attractive--sector">Attractive_Sector</a></li><li>Class <a href="class_b_b_o_b__suite.html#exhale-class-class-b-b-o-b-suite">BBOB_suite</a></li><li>Class <a href="class_bent___cigar.html#exhale-class-class-bent--cigar">Bent_Cigar</a></li><li>Class <a href="class_bueche___rastrigin.html#exhale-class-class-bueche--rastrigin">Bueche_Rastrigin</a></li><li>Class <a href="class_coco___transformation___data.html#exhale-class-class-coco--transformation--data">Coco_Transformation_Data</a></li><li>Class <a href="class_concatenated___trap.html#exhale-class-class-concatenated--trap">Concatenated_Trap</a></li><li>Class <a href="class_different___powers.html#exhale-class-class-different--powers">Different_Powers</a></li><li>Class <a href="class_discus.html#exhale-class-class-discus">Discus</a></li><li>Class <a href="class_ellipsoid.html#exhale-class-class-ellipsoid">Ellipsoid</a></li><li>Class <a href="class_ellipsoid___rotated.html#exhale-class-class-ellipsoid--rotated">Ellipsoid_Rotated</a></li><li>Class <a href="class_gallagher101.html#exhale-class-class-gallagher101">Gallagher101</a></li><li>Class <a href="class_gallagher21.html#exhale-class-class-gallagher21">Gallagher21</a></li><li>Template Class <a href="classgeneric_generator.html#exhale-class-classgeneric-generator">genericGenerator</a></li><li>Class <a href="class_griewank___rosen_brock.html#exhale-class-class-griewank--rosen-brock">Griewank_RosenBrock</a></li><li>Class <a href="class_i_o_hprofiler__configuration.html#exhale-class-class-i-o-hprofiler-configuration">IOHprofiler_configuration</a></li><li>Class <a href="class_i_o_hprofiler__csv__logger.html#exhale-class-class-i-o-hprofiler-csv-logger">IOHprofiler_csv_logger</a></li><li>Template Class <a href="class_i_o_hprofiler__experimenter.html#exhale-class-class-i-o-hprofiler-experimenter">IOHprofiler_experimenter</a></li><li>Class <a href="class_i_o_hprofiler__observer.html#exhale-class-class-i-o-hprofiler-observer">IOHprofiler_observer</a></li><li>Template Class <a href="class_i_o_hprofiler__problem.html#exhale-class-class-i-o-hprofiler-problem">IOHprofiler_problem</a></li><li>Class <a href="class_i_o_hprofiler__random.html#exhale-class-class-i-o-hprofiler-random">IOHprofiler_random</a></li><li>Template Class <a href="class_i_o_hprofiler__suite.html#exhale-class-class-i-o-hprofiler-suite">IOHprofiler_suite</a></li><li>Class <a href="class_i_o_hprofiler__transformation.html#exhale-class-class-i-o-hprofiler-transformation">IOHprofiler_transformation</a></li><li>Class <a href="class_ising___ring.html#exhale-class-class-ising--ring">Ising_Ring</a></li><li>Class <a href="class_ising___torus.html#exhale-class-class-ising--torus">Ising_Torus</a></li><li>Class <a href="class_ising___triangular.html#exhale-class-class-ising--triangular">Ising_Triangular</a></li><li>Class <a href="class_katsuura.html#exhale-class-class-katsuura">Katsuura</a></li><li>Class <a href="class_l_a_b_s.html#exhale-class-class-l-a-b-s">LABS</a></li><li>Class <a href="class_leading_ones.html#exhale-class-class-leading-ones">LeadingOnes</a></li><li>Class <a href="class_leading_ones___dummy1.html#exhale-class-class-leading-ones--dummy1">LeadingOnes_Dummy1</a></li><li>Class <a href="class_leading_ones___dummy2.html#exhale-class-class-leading-ones--dummy2">LeadingOnes_Dummy2</a></li><li>Class <a href="class_leading_ones___epistasis.html#exhale-class-class-leading-ones--epistasis">LeadingOnes_Epistasis</a></li><li>Class <a href="class_leading_ones___neutrality.html#exhale-class-class-leading-ones--neutrality">LeadingOnes_Neutrality</a></li><li>Class <a href="class_leading_ones___ruggedness1.html#exhale-class-class-leading-ones--ruggedness1">LeadingOnes_Ruggedness1</a></li><li>Class <a href="class_leading_ones___ruggedness2.html#exhale-class-class-leading-ones--ruggedness2">LeadingOnes_Ruggedness2</a></li><li>Class <a href="class_leading_ones___ruggedness3.html#exhale-class-class-leading-ones--ruggedness3">LeadingOnes_Ruggedness3</a></li><li>Class <a href="class_linear.html#exhale-class-class-linear">Linear</a></li><li>Class <a href="class_linear___slope.html#exhale-class-class-linear--slope">Linear_Slope</a></li><li>Class <a href="class_lunacek___bi___rastrigin.html#exhale-class-class-lunacek--bi--rastrigin">Lunacek_Bi_Rastrigin</a></li><li>Class <a href="class_m_i_s.html#exhale-class-class-m-i-s">MIS</a></li><li>Class <a href="class_n_k___landscapes.html#exhale-class-class-n-k--landscapes">NK_Landscapes</a></li><li>Class <a href="class_n_queens.html#exhale-class-class-n-queens">NQueens</a></li><li>Class <a href="class_one_max.html#exhale-class-class-one-max">OneMax</a></li><li>Class <a href="class_one_max___dummy1.html#exhale-class-class-one-max--dummy1">OneMax_Dummy1</a></li><li>Class <a href="class_one_max___dummy2.html#exhale-class-class-one-max--dummy2">OneMax_Dummy2</a></li><li>Class <a href="class_one_max___epistasis.html#exhale-class-class-one-max--epistasis">OneMax_Epistasis</a></li><li>Class <a href="class_one_max___neutrality.html#exhale-class-class-one-max--neutrality">OneMax_Neutrality</a></li><li>Class <a href="class_one_max___ruggedness1.html#exhale-class-class-one-max--ruggedness1">OneMax_Ruggedness1</a></li><li>Class <a href="class_one_max___ruggedness2.html#exhale-class-class-one-max--ruggedness2">OneMax_Ruggedness2</a></li><li>Class <a href="class_one_max___ruggedness3.html#exhale-class-class-one-max--ruggedness3">OneMax_Ruggedness3</a></li><li>Class <a href="class_p_b_o__suite.html#exhale-class-class-p-b-o-suite">PBO_suite</a></li><li>Class <a href="class_rastrigin.html#exhale-class-class-rastrigin">Rastrigin</a></li><li>Class <a href="class_rastrigin___rotated.html#exhale-class-class-rastrigin--rotated">Rastrigin_Rotated</a></li><li>Template Class <a href="classregister_in_factory.html#exhale-class-classregister-in-factory">registerInFactory</a></li><li>Class <a href="class_rosenbrock.html#exhale-class-class-rosenbrock">Rosenbrock</a></li><li>Class <a href="class_rosenbrock___rotated.html#exhale-class-class-rosenbrock--rotated">Rosenbrock_Rotated</a></li><li>Class <a href="class_schaffers10.html#exhale-class-class-schaffers10">Schaffers10</a></li><li>Class <a href="class_schaffers1000.html#exhale-class-class-schaffers1000">Schaffers1000</a></li><li>Class <a href="class_schwefel.html#exhale-class-class-schwefel">Schwefel</a></li><li>Class <a href="class_sharp___ridge.html#exhale-class-class-sharp--ridge">Sharp_Ridge</a></li><li>Class <a href="class_sphere.html#exhale-class-class-sphere">Sphere</a></li><li>Class <a href="class_step___ellipsoid.html#exhale-class-class-step--ellipsoid">Step_Ellipsoid</a></li><li>Class <a href="class_w___model___leading_ones.html#exhale-class-class-w--model--leading-ones">W_Model_LeadingOnes</a></li><li>Class <a href="class_w___model___one_max.html#exhale-class-class-w--model--one-max">W_Model_OneMax</a></li><li>Class <a href="class_weierstrass.html#exhale-class-class-weierstrass">Weierstrass</a></li><li>Enum <a href="enum__i_o_hprofiler__configuration_8h_1a3ed894cd2350c8f1c6266c10de9418d3.html#exhale-enum-i-o-hprofiler-configuration-8h-1a3ed894cd2350c8f1c6266c10de9418d3">_LINE_</a></li><li class="lastChild">Enum <a href="enum__i_o_hprofiler__common_8h_1a8ced63b668f6c1668b42db62456081f5.html#exhale-enum-i-o-hprofiler-common-8h-1a8ced63b668f6c1668b42db62456081f5">IOH_optimization_type</a></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView class-treeView --></div>
+<div class="section" id="file-hierarchy">
+<h2>File Hierarchy<a class="headerlink" href="#file-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="file-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li class="lastChild">Directory <a href="dir_src.html#dir-src">src</a><ul><li>Directory <a href="dir_src_Problems.html#dir-src-Problems">Problems</a><ul><li>Directory <a href="dir_src_Problems_BBOB.html#dir-src-Problems-BBOB">BBOB</a><ul><li>Directory <a href="dir_src_Problems_BBOB_bbob_common_used_functions.html#dir-src-Problems-BBOB-bbob-common-used-functions">functions</a><ul><li>File <a href="file_src_Problems_BBOB_bbob_common_used_functions_coco_transformation.cpp.html#file-src-Problems-BBOB-bbob-common-used-functions-coco-transformation.cpp">coco_transformation.cpp</a></li><li>File <a href="file_src_Problems_BBOB_bbob_common_used_functions_coco_transformation.hpp.html#file-src-Problems-BBOB-bbob-common-used-functions-coco-transformation.hpp">coco_transformation.hpp</a></li><li>File <a href="file_src_Problems_BBOB_bbob_common_used_functions_coco_transformation_objs.hpp.html#file-src-Problems-BBOB-bbob-common-used-functions-coco-transformation-objs.hpp">coco_transformation_objs.hpp</a></li><li>File <a href="file_src_Problems_BBOB_bbob_common_used_functions_coco_transformation_vars.hpp.html#file-src-Problems-BBOB-bbob-common-used-functions-coco-transformation-vars.hpp">coco_transformation_vars.hpp</a></li><li class="lastChild">File <a href="file_src_Problems_BBOB_bbob_common_used_functions_suite_bbob_legacy_code.hpp.html#file-src-Problems-BBOB-bbob-common-used-functions-suite-bbob-legacy-code.hpp">suite_bbob_legacy_code.hpp</a></li></ul></li><li>File <a href="file_src_Problems_BBOB_f_attractive_sector.hpp.html#file-src-Problems-BBOB-f-attractive-sector.hpp">f_attractive_sector.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_bent_cigar.hpp.html#file-src-Problems-BBOB-f-bent-cigar.hpp">f_bent_cigar.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_bueche_rastrigin.hpp.html#file-src-Problems-BBOB-f-bueche-rastrigin.hpp">f_bueche_rastrigin.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_different_powers.hpp.html#file-src-Problems-BBOB-f-different-powers.hpp">f_different_powers.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_discus.hpp.html#file-src-Problems-BBOB-f-discus.hpp">f_discus.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_ellipsoid.hpp.html#file-src-Problems-BBOB-f-ellipsoid.hpp">f_ellipsoid.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_ellipsoid_rotated.hpp.html#file-src-Problems-BBOB-f-ellipsoid-rotated.hpp">f_ellipsoid_rotated.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_gallagher101.hpp.html#file-src-Problems-BBOB-f-gallagher101.hpp">f_gallagher101.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_gallagher21.hpp.html#file-src-Problems-BBOB-f-gallagher21.hpp">f_gallagher21.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_griewank_rosenbrock.hpp.html#file-src-Problems-BBOB-f-griewank-rosenbrock.hpp">f_griewank_rosenbrock.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_katsuura.hpp.html#file-src-Problems-BBOB-f-katsuura.hpp">f_katsuura.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_linear_slope.hpp.html#file-src-Problems-BBOB-f-linear-slope.hpp">f_linear_slope.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_lunacek_bi_rastrigin.hpp.html#file-src-Problems-BBOB-f-lunacek-bi-rastrigin.hpp">f_lunacek_bi_rastrigin.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_rastrigin.hpp.html#file-src-Problems-BBOB-f-rastrigin.hpp">f_rastrigin.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_rastrigin_rotated.hpp.html#file-src-Problems-BBOB-f-rastrigin-rotated.hpp">f_rastrigin_rotated.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_rosenbrock.hpp.html#file-src-Problems-BBOB-f-rosenbrock.hpp">f_rosenbrock.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_rosenbrock_rotated.hpp.html#file-src-Problems-BBOB-f-rosenbrock-rotated.hpp">f_rosenbrock_rotated.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_schaffers10.hpp.html#file-src-Problems-BBOB-f-schaffers10.hpp">f_schaffers10.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_schaffers1000.hpp.html#file-src-Problems-BBOB-f-schaffers1000.hpp">f_schaffers1000.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_schwefel.hpp.html#file-src-Problems-BBOB-f-schwefel.hpp">f_schwefel.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_sharp_ridge.hpp.html#file-src-Problems-BBOB-f-sharp-ridge.hpp">f_sharp_ridge.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_sphere.hpp.html#file-src-Problems-BBOB-f-sphere.hpp">f_sphere.hpp</a></li><li>File <a href="file_src_Problems_BBOB_f_step_ellipsoid.hpp.html#file-src-Problems-BBOB-f-step-ellipsoid.hpp">f_step_ellipsoid.hpp</a></li><li class="lastChild">File <a href="file_src_Problems_BBOB_f_weierstrass.hpp.html#file-src-Problems-BBOB-f-weierstrass.hpp">f_weierstrass.hpp</a></li></ul></li><li>Directory <a href="dir_src_Problems_common_used_functions.html#dir-src-Problems-common-used-functions">functions</a><ul><li class="lastChild">File <a href="file_src_Problems_common_used_functions_wmodels.hpp.html#file-src-Problems-common-used-functions-wmodels.hpp">wmodels.hpp</a></li></ul></li><li>Directory <a href="dir_src_Problems_PBO.html#dir-src-Problems-PBO">PBO</a><ul><li>File <a href="file_src_Problems_PBO_f_concatenated_trap.hpp.html#file-src-Problems-PBO-f-concatenated-trap.hpp">f_concatenated_trap.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_ising_ring.hpp.html#file-src-Problems-PBO-f-ising-ring.hpp">f_ising_ring.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_ising_torus.hpp.html#file-src-Problems-PBO-f-ising-torus.hpp">f_ising_torus.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_ising_triangular.hpp.html#file-src-Problems-PBO-f-ising-triangular.hpp">f_ising_triangular.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_labs.hpp.html#file-src-Problems-PBO-f-labs.hpp">f_labs.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones.hpp.html#file-src-Problems-PBO-f-leading-ones.hpp">f_leading_ones.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_dummy1.hpp.html#file-src-Problems-PBO-f-leading-ones-dummy1.hpp">f_leading_ones_dummy1.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_dummy2.hpp.html#file-src-Problems-PBO-f-leading-ones-dummy2.hpp">f_leading_ones_dummy2.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_epistasis.hpp.html#file-src-Problems-PBO-f-leading-ones-epistasis.hpp">f_leading_ones_epistasis.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_neutrality.hpp.html#file-src-Problems-PBO-f-leading-ones-neutrality.hpp">f_leading_ones_neutrality.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_ruggedness1.hpp.html#file-src-Problems-PBO-f-leading-ones-ruggedness1.hpp">f_leading_ones_ruggedness1.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_ruggedness2.hpp.html#file-src-Problems-PBO-f-leading-ones-ruggedness2.hpp">f_leading_ones_ruggedness2.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_leading_ones_ruggedness3.hpp.html#file-src-Problems-PBO-f-leading-ones-ruggedness3.hpp">f_leading_ones_ruggedness3.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_linear.hpp.html#file-src-Problems-PBO-f-linear.hpp">f_linear.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_MIS.hpp.html#file-src-Problems-PBO-f-MIS.hpp">f_MIS.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_N_queens.hpp.html#file-src-Problems-PBO-f-N-queens.hpp">f_N_queens.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_nk_landscapes.hpp.html#file-src-Problems-PBO-f-nk-landscapes.hpp">f_nk_landscapes.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max.hpp.html#file-src-Problems-PBO-f-one-max.hpp">f_one_max.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_dummy1.hpp.html#file-src-Problems-PBO-f-one-max-dummy1.hpp">f_one_max_dummy1.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_dummy2.hpp.html#file-src-Problems-PBO-f-one-max-dummy2.hpp">f_one_max_dummy2.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_epistasis.hpp.html#file-src-Problems-PBO-f-one-max-epistasis.hpp">f_one_max_epistasis.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_neutrality.hpp.html#file-src-Problems-PBO-f-one-max-neutrality.hpp">f_one_max_neutrality.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_ruggedness1.hpp.html#file-src-Problems-PBO-f-one-max-ruggedness1.hpp">f_one_max_ruggedness1.hpp</a></li><li>File <a href="file_src_Problems_PBO_f_one_max_ruggedness2.hpp.html#file-src-Problems-PBO-f-one-max-ruggedness2.hpp">f_one_max_ruggedness2.hpp</a></li><li class="lastChild">File <a href="file_src_Problems_PBO_f_one_max_ruggedness3.hpp.html#file-src-Problems-PBO-f-one-max-ruggedness3.hpp">f_one_max_ruggedness3.hpp</a></li></ul></li><li>Directory <a href="dir_src_Problems_WModel.html#dir-src-Problems-WModel">WModel</a><ul><li>File <a href="file_src_Problems_WModel_f_w_model_leading_ones.hpp.html#file-src-Problems-WModel-f-w-model-leading-ones.hpp">f_w_model_leading_ones.hpp</a></li><li class="lastChild">File <a href="file_src_Problems_WModel_f_w_model_one_max.hpp.html#file-src-Problems-WModel-f-w-model-one-max.hpp">f_w_model_one_max.hpp</a></li></ul></li><li>File <a href="file_src_Problems_IOHprofiler_all_problems.hpp.html#file-src-Problems-IOHprofiler-all-problems.hpp">IOHprofiler_all_problems.hpp</a></li><li class="lastChild">File <a href="file_src_Problems_README.md.html#file-src-Problems-README.md">README.md</a></li></ul></li><li>Directory <a href="dir_src_Suites.html#dir-src-Suites">Suites</a><ul><li>File <a href="file_src_Suites_IOHprofiler_all_suites.hpp.html#file-src-Suites-IOHprofiler-all-suites.hpp">IOHprofiler_all_suites.hpp</a></li><li>File <a href="file_src_Suites_IOHprofiler_BBOB_suite.hpp.html#file-src-Suites-IOHprofiler-BBOB-suite.hpp">IOHprofiler_BBOB_suite.hpp</a></li><li>File <a href="file_src_Suites_IOHprofiler_PBO_suite.hpp.html#file-src-Suites-IOHprofiler-PBO-suite.hpp">IOHprofiler_PBO_suite.hpp</a></li><li class="lastChild">File <a href="file_src_Suites_README.md.html#file-src-Suites-README.md">README.md</a></li></ul></li><li class="lastChild">Directory <a href="dir_src_Template.html#dir-src-Template">Template</a><ul><li>Directory <a href="dir_src_Template_Experiments.html#dir-src-Template-Experiments">Experiments</a><ul><li>File <a href="file_src_Template_Experiments_IOHprofiler_configuration.cpp.html#file-src-Template-Experiments-IOHprofiler-configuration.cpp">IOHprofiler_configuration.cpp</a></li><li>File <a href="file_src_Template_Experiments_IOHprofiler_configuration.h.html#file-src-Template-Experiments-IOHprofiler-configuration.h">IOHprofiler_configuration.h</a></li><li>File <a href="file_src_Template_Experiments_IOHprofiler_experimenter.h.html#file-src-Template-Experiments-IOHprofiler-experimenter.h">IOHprofiler_experimenter.h</a></li><li>File <a href="file_src_Template_Experiments_IOHprofiler_experimenter.hpp.html#file-src-Template-Experiments-IOHprofiler-experimenter.hpp">IOHprofiler_experimenter.hpp</a></li><li>File <a href="file_src_Template_Experiments_IOHprofiler_string.hpp.html#file-src-Template-Experiments-IOHprofiler-string.hpp">IOHprofiler_string.hpp</a></li><li class="lastChild">File <a href="file_src_Template_Experiments_README.md.html#file-src-Template-Experiments-README.md">README.md</a></li></ul></li><li>Directory <a href="dir_src_Template_Loggers.html#dir-src-Template-Loggers">Loggers</a><ul><li>File <a href="file_src_Template_Loggers_IOHprofiler_csv_logger.cpp.html#file-src-Template-Loggers-IOHprofiler-csv-logger.cpp">IOHprofiler_csv_logger.cpp</a></li><li class="lastChild">File <a href="file_src_Template_Loggers_IOHprofiler_csv_logger.h.html#file-src-Template-Loggers-IOHprofiler-csv-logger.h">IOHprofiler_csv_logger.h</a></li></ul></li><li>File <a href="file_src_Template_IOHprofiler_class_generator.h.html#file-src-Template-IOHprofiler-class-generator.h">IOHprofiler_class_generator.h</a></li><li>File <a href="file_src_Template_IOHprofiler_class_generator.hpp.html#file-src-Template-IOHprofiler-class-generator.hpp">IOHprofiler_class_generator.hpp</a></li><li>File <a href="file_src_Template_IOHprofiler_common.cpp.html#file-src-Template-IOHprofiler-common.cpp">IOHprofiler_common.cpp</a></li><li>File <a href="file_src_Template_IOHprofiler_common.h.html#file-src-Template-IOHprofiler-common.h">IOHprofiler_common.h</a></li><li>File <a href="file_src_Template_IOHprofiler_observer.cpp.html#file-src-Template-IOHprofiler-observer.cpp">IOHprofiler_observer.cpp</a></li><li>File <a href="file_src_Template_IOHprofiler_observer.h.html#file-src-Template-IOHprofiler-observer.h">IOHprofiler_observer.h</a></li><li>File <a href="file_src_Template_IOHprofiler_platform.h.html#file-src-Template-IOHprofiler-platform.h">IOHprofiler_platform.h</a></li><li>File <a href="file_src_Template_IOHprofiler_problem.h.html#file-src-Template-IOHprofiler-problem.h">IOHprofiler_problem.h</a></li><li>File <a href="file_src_Template_IOHprofiler_problem.hpp.html#file-src-Template-IOHprofiler-problem.hpp">IOHprofiler_problem.hpp</a></li><li>File <a href="file_src_Template_IOHprofiler_random.cpp.html#file-src-Template-IOHprofiler-random.cpp">IOHprofiler_random.cpp</a></li><li>File <a href="file_src_Template_IOHprofiler_random.h.html#file-src-Template-IOHprofiler-random.h">IOHprofiler_random.h</a></li><li>File <a href="file_src_Template_IOHprofiler_suite.h.html#file-src-Template-IOHprofiler-suite.h">IOHprofiler_suite.h</a></li><li>File <a href="file_src_Template_IOHprofiler_suite.hpp.html#file-src-Template-IOHprofiler-suite.hpp">IOHprofiler_suite.hpp</a></li><li>File <a href="file_src_Template_IOHprofiler_transformation.cpp.html#file-src-Template-IOHprofiler-transformation.cpp">IOHprofiler_transformation.cpp</a></li><li>File <a href="file_src_Template_IOHprofiler_transformation.h.html#file-src-Template-IOHprofiler-transformation.h">IOHprofiler_transformation.h</a></li><li class="lastChild">File <a href="file_src_Template_README.md.html#file-src-Template-README.md">README.md</a></li></ul></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView file-treeView --></div>
+<div class="section" id="full-api">
+<h2>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes-and-structs">
+<h3>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structf__gallagher__permutation__t.html">Struct f_gallagher_permutation_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structf__gallagher__permutation__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structf__gallagher__permutation__t1.html">Struct f_gallagher_permutation_t1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structf__gallagher__permutation__t1.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class___dict.html">Class _Dict</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class___dict.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_attractive___sector.html">Class Attractive_Sector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_attractive___sector.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_attractive___sector.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_attractive___sector.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_b_b_o_b__suite.html">Class BBOB_suite</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_b_b_o_b__suite.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_b_b_o_b__suite.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_b_b_o_b__suite.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_bent___cigar.html">Class Bent_Cigar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_bent___cigar.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_bent___cigar.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_bent___cigar.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_bueche___rastrigin.html">Class Bueche_Rastrigin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_bueche___rastrigin.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_bueche___rastrigin.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_bueche___rastrigin.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_coco___transformation___data.html">Class Coco_Transformation_Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_coco___transformation___data.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_concatenated___trap.html">Class Concatenated_Trap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_concatenated___trap.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_concatenated___trap.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_concatenated___trap.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_different___powers.html">Class Different_Powers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_different___powers.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_different___powers.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_different___powers.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_discus.html">Class Discus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_discus.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_discus.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_discus.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_ellipsoid.html">Class Ellipsoid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_ellipsoid.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_ellipsoid.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_ellipsoid.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_ellipsoid___rotated.html">Class Ellipsoid_Rotated</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_ellipsoid___rotated.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_ellipsoid___rotated.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_ellipsoid___rotated.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_gallagher101.html">Class Gallagher101</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_gallagher101.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_gallagher101.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_gallagher101.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_gallagher21.html">Class Gallagher21</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_gallagher21.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_gallagher21.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_gallagher21.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classgeneric_generator.html">Template Class genericGenerator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classgeneric_generator.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_griewank___rosen_brock.html">Class Griewank_RosenBrock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_griewank___rosen_brock.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_griewank___rosen_brock.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_griewank___rosen_brock.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__configuration.html">Class IOHprofiler_configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__configuration.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__csv__logger.html">Class IOHprofiler_csv_logger</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__csv__logger.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_i_o_hprofiler__csv__logger.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__csv__logger.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__experimenter.html">Template Class IOHprofiler_experimenter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__experimenter.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__observer.html">Class IOHprofiler_observer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__observer.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_i_o_hprofiler__observer.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__observer.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__problem.html">Template Class IOHprofiler_problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__problem.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_i_o_hprofiler__problem.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__problem.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__random.html">Class IOHprofiler_random</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__random.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_i_o_hprofiler__random.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__random.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__suite.html">Template Class IOHprofiler_suite</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__suite.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_i_o_hprofiler__suite.html#base-types">Base Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__suite.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_i_o_hprofiler__transformation.html">Class IOHprofiler_transformation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_i_o_hprofiler__transformation.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_ising___ring.html">Class Ising_Ring</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___ring.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_ising___ring.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___ring.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_ising___torus.html">Class Ising_Torus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___torus.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_ising___torus.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___torus.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_ising___triangular.html">Class Ising_Triangular</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___triangular.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_ising___triangular.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_ising___triangular.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_katsuura.html">Class Katsuura</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_katsuura.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_katsuura.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_katsuura.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_l_a_b_s.html">Class LABS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_l_a_b_s.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_l_a_b_s.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_l_a_b_s.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones.html">Class LeadingOnes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___dummy1.html">Class LeadingOnes_Dummy1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___dummy1.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___dummy1.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___dummy1.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___dummy2.html">Class LeadingOnes_Dummy2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___dummy2.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___dummy2.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___dummy2.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___epistasis.html">Class LeadingOnes_Epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___epistasis.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___epistasis.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___epistasis.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___neutrality.html">Class LeadingOnes_Neutrality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___neutrality.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___neutrality.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___neutrality.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___ruggedness1.html">Class LeadingOnes_Ruggedness1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness1.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___ruggedness1.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness1.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___ruggedness2.html">Class LeadingOnes_Ruggedness2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness2.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___ruggedness2.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness2.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_leading_ones___ruggedness3.html">Class LeadingOnes_Ruggedness3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness3.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_leading_ones___ruggedness3.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_leading_ones___ruggedness3.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_linear.html">Class Linear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_linear.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_linear.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_linear.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_linear___slope.html">Class Linear_Slope</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_linear___slope.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_linear___slope.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_linear___slope.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_lunacek___bi___rastrigin.html">Class Lunacek_Bi_Rastrigin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_lunacek___bi___rastrigin.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_lunacek___bi___rastrigin.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_lunacek___bi___rastrigin.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_m_i_s.html">Class MIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_m_i_s.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_m_i_s.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_m_i_s.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_n_k___landscapes.html">Class NK_Landscapes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_n_k___landscapes.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_n_k___landscapes.html#base-types">Base Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_n_k___landscapes.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_n_queens.html">Class NQueens</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_n_queens.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_n_queens.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_n_queens.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max.html">Class OneMax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___dummy1.html">Class OneMax_Dummy1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___dummy1.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___dummy1.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___dummy1.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___dummy2.html">Class OneMax_Dummy2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___dummy2.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___dummy2.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___dummy2.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___epistasis.html">Class OneMax_Epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___epistasis.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___epistasis.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___epistasis.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___neutrality.html">Class OneMax_Neutrality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___neutrality.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___neutrality.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___neutrality.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___ruggedness1.html">Class OneMax_Ruggedness1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness1.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___ruggedness1.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness1.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___ruggedness2.html">Class OneMax_Ruggedness2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness2.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___ruggedness2.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness2.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_one_max___ruggedness3.html">Class OneMax_Ruggedness3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness3.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_one_max___ruggedness3.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_one_max___ruggedness3.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_p_b_o__suite.html">Class PBO_suite</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_p_b_o__suite.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_p_b_o__suite.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_p_b_o__suite.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_rastrigin.html">Class Rastrigin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_rastrigin.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_rastrigin.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_rastrigin.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_rastrigin___rotated.html">Class Rastrigin_Rotated</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_rastrigin___rotated.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_rastrigin___rotated.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_rastrigin___rotated.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classregister_in_factory.html">Template Class registerInFactory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classregister_in_factory.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_rosenbrock.html">Class Rosenbrock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_rosenbrock.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_rosenbrock.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_rosenbrock.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_rosenbrock___rotated.html">Class Rosenbrock_Rotated</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_rosenbrock___rotated.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_rosenbrock___rotated.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_rosenbrock___rotated.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_schaffers10.html">Class Schaffers10</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_schaffers10.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_schaffers10.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_schaffers10.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_schaffers1000.html">Class Schaffers1000</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_schaffers1000.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_schaffers1000.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_schaffers1000.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_schwefel.html">Class Schwefel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_schwefel.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_schwefel.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_schwefel.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_sharp___ridge.html">Class Sharp_Ridge</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_sharp___ridge.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_sharp___ridge.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_sharp___ridge.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_sphere.html">Class Sphere</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_sphere.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_sphere.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_sphere.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_step___ellipsoid.html">Class Step_Ellipsoid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_step___ellipsoid.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_step___ellipsoid.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_step___ellipsoid.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_w___model___leading_ones.html">Class W_Model_LeadingOnes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_w___model___leading_ones.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_w___model___leading_ones.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_w___model___leading_ones.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_w___model___one_max.html">Class W_Model_OneMax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_w___model___one_max.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_w___model___one_max.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_w___model___one_max.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class_weierstrass.html">Class Weierstrass</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_weierstrass.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_weierstrass.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="class_weierstrass.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enums">
+<h3>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum__i_o_hprofiler__configuration_8h_1a3ed894cd2350c8f1c6266c10de9418d3.html">Enum _LINE_</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum__i_o_hprofiler__configuration_8h_1a3ed894cd2350c8f1c6266c10de9418d3.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum__i_o_hprofiler__common_8h_1a8ced63b668f6c1668b42db62456081f5.html">Enum IOH_optimization_type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum__i_o_hprofiler__common_8h_1a8ced63b668f6c1668b42db62456081f5.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a72540a8c316f17b17cf77155e1a5aaef.html">Template Function _toString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a72540a8c316f17b17cf77155e1a5aaef.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1ab7cc65be3009deafdccbba60680d6b8e.html">Function base_epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1ab7cc65be3009deafdccbba60680d6b8e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae276a15595ea9f7860b823e4229afc5c.html">Function bbob2009_compute_fopt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae276a15595ea9f7860b823e4229afc5c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2a04739df5afb6d6c00049e6f9fe9a72.html">Function bbob2009_compute_rotation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2a04739df5afb6d6c00049e6f9fe9a72.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a5f6d2751aa7b7138ccbad72d2dcd8cfe.html">Function bbob2009_compute_xopt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a5f6d2751aa7b7138ccbad72d2dcd8cfe.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a0f571b7dae2cb87ee9651a665f36f965.html">Function bbob2009_copy_rotation_matrix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a0f571b7dae2cb87ee9651a665f36f965.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a9176e3ed48baabef3d59abb111e4ce2a.html">Function bbob2009_fmax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a9176e3ed48baabef3d59abb111e4ce2a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2ec6e1c131829dfca561e15a62670578.html">Function bbob2009_fmin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a2ec6e1c131829dfca561e15a62670578.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a45b7deee386d39f3a51195a76ecc8b3f.html">Function bbob2009_gauss</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a45b7deee386d39f3a51195a76ecc8b3f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae9c96bbb068bbafde4c579a67334ac03.html">Function bbob2009_reshape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1ae9c96bbb068bbafde4c579a67334ac03.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1aa419105fb5ab1a7d1eca3d036e1db642.html">Function bbob2009_round</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1aa419105fb5ab1a7d1eca3d036e1db642.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a69567b5718c65b57d0f8e23f87ec8922.html">Function bbob2009_unif</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_suite__bbob__legacy__code_8hpp_1a69567b5718c65b57d0f8e23f87ec8922.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation_8hpp_1a503f1bf4eeccb9233437fb1a765fe807.html">Function coco_tranformation_objs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation_8hpp_1a503f1bf4eeccb9233437fb1a765fe807.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation_8hpp_1a4a9a333f758840831893b8ce7fa46132.html">Function coco_tranformation_vars</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation_8hpp_1a4a9a333f758840831893b8ce7fa46132.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9e8b4501917f11cd589aa07cd3e81a24.html">Template Function compareObjectives(const std::vector&lt;valueType&gt;&amp;, const std::vector&lt;valueType&gt;&amp;, const IOH_optimization_type)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9e8b4501917f11cd589aa07cd3e81a24.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a45f30a5e2becde9c3f0656371c5b020a.html">Template Function compareObjectives(const valueType, const valueType, const IOH_optimization_type)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a45f30a5e2becde9c3f0656371c5b020a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a7434905a54af524748676b956cb98315.html">Template Function compareVector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a7434905a54af524748676b956cb98315.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a5d38e9efaa7d7eacdacefb91a9c04638.html">Template Function copyVector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a5d38e9efaa7d7eacdacefb91a9c04638.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a6aa24f3d58b0d0287ce31d2dbd042e38.html">Function dummy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a6aa24f3d58b0d0287ce31d2dbd042e38.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a58127eac2344302678c4f407d95ab379.html">Function epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a58127eac2344302678c4f407d95ab379.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a9b2f198cb3a7d5a1d0ab685d7b294b99.html">Function epistasis_compute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a9b2f198cb3a7d5a1d0ab685d7b294b99.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_f__gallagher21_8hpp_1a5c5d751cfb91fe5547ae75b981f065fd.html">Function f_gallagher_compare_doubles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_f__gallagher21_8hpp_1a5c5d751cfb91fe5547ae75b981f065fd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_f__gallagher101_8hpp_1a24f3aab754bbb64f0a0a9d159867c4a7.html">Function f_gallagher_compare_doubles1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_f__gallagher101_8hpp_1a24f3aab754bbb64f0a0a9d159867c4a7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1a969cda1560fc9180c3d21e68afb04faf.html">Function get_int_vector_parse_string</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1a969cda1560fc9180c3d21e68afb04faf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a2429c989d189ec18ebb92ea1a9e962ec.html">Function IOH_error(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a2429c989d189ec18ebb92ea1a9e962ec.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a2429c989d189ec18ebb92ea1a9e962ec.html">Function IOH_error(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a2429c989d189ec18ebb92ea1a9e962ec.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a94e2eb7a9e2e25c0ce0464881fca803c.html">Function IOH_log(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a94e2eb7a9e2e25c0ce0464881fca803c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a8efaa556027d382a0ff55675f63e11a0.html">Function IOH_log(std::string, std::ofstream&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a8efaa556027d382a0ff55675f63e11a0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a94e2eb7a9e2e25c0ce0464881fca803c.html">Function IOH_log(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a94e2eb7a9e2e25c0ce0464881fca803c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a8efaa556027d382a0ff55675f63e11a0.html">Function IOH_log(std::string, std::ofstream&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a8efaa556027d382a0ff55675f63e11a0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a9d1fb3375862ac7dc29b58d84f110022.html">Function IOH_warning(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8cpp_1a9d1fb3375862ac7dc29b58d84f110022.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9d1fb3375862ac7dc29b58d84f110022.html">Function IOH_warning(std::string)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__common_8h_1a9d1fb3375862ac7dc29b58d84f110022.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1ad1eef8bddb659c142c117d814f51f464.html">Function layer_compute_ruggedness</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1ad1eef8bddb659c142c117d814f51f464.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1aa75e8574d6c8a0a4f2eaf774593bdc03.html">Function layer_epistasis_compute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1aa75e8574d6c8a0a4f2eaf774593bdc03.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a3ad2109730fb6c43eb4701a174904eb8.html">Function layer_neutrality_compute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a3ad2109730fb6c43eb4701a174904eb8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a2b2e96781c20bed1da12e65041e511eb.html">Function max_gamma</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a2b2e96781c20bed1da12e65041e511eb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a5f4f8e331ba2945653c5d531f66c869c.html">Function neutrality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a5f4f8e331ba2945653c5d531f66c869c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a1c7149337617e29e31e8d9d46e7c3e27.html">Function ruggedness1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a1c7149337617e29e31e8d9d46e7c3e27.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a7644a9a22570f976f067ecd88b9133da.html">Function ruggedness2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a7644a9a22570f976f067ecd88b9133da.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a4588aad185275cd09ca179c48a308b34.html">Function ruggedness3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a4588aad185275cd09ca179c48a308b34.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a053536933e3f58002ddbb4655def7f36.html">Function ruggedness_raw</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a053536933e3f58002ddbb4655def7f36.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_wmodels_8hpp_1a929033aaad173c3ee686e151a1c5f047.html">Function ruggedness_translate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_wmodels_8hpp_1a929033aaad173c3ee686e151a1c5f047.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1aa1a5d11ea1755d1046fe4b0c02a65997.html">Function strstrip</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function__i_o_hprofiler__string_8hpp_1aa1a5d11ea1755d1046fe4b0c02a65997.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a9658e101201758d59e1d7500e1daa8c3.html">Function transform_obj_norm_by_dim_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a9658e101201758d59e1d7500e1daa8c3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1aa6ac70641958645c7ea63e568709eef7.html">Function transform_obj_oscillate_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1aa6ac70641958645c7ea63e568709eef7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1ae22b9bbd7c154fa2d961d03417320285.html">Function transform_obj_penalize_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1ae22b9bbd7c154fa2d961d03417320285.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a2938164edb2dc9cdaf68cc84a619c331.html">Function transform_obj_power_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a2938164edb2dc9cdaf68cc84a619c331.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a8a88b946b8d7dc9ca795405375a497ce.html">Function transform_obj_scale_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a8a88b946b8d7dc9ca795405375a497ce.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a0d073f17e11124215ea5f276bcc22448.html">Function transform_obj_shift_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__objs_8hpp_1a0d073f17e11124215ea5f276bcc22448.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a5b211bedd46230c304320b0f724bfa20.html">Function transform_vars_affine_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a5b211bedd46230c304320b0f724bfa20.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aab633d5f17a8282cbc39f4034cdc1014.html">Function transform_vars_asymmetric_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aab633d5f17a8282cbc39f4034cdc1014.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa9eb2bb3464240ed469f20fde715f675.html">Function transform_vars_brs_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa9eb2bb3464240ed469f20fde715f675.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a6f207b94ef1f046ddad563284880b5c2.html">Function transform_vars_conditioning_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a6f207b94ef1f046ddad563284880b5c2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aedab87e6a7bb47f87c398e35e865418f.html">Function transform_vars_oscillate_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aedab87e6a7bb47f87c398e35e865418f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a59f848e0dc071ba2977d3a2122006268.html">Function transform_vars_scale_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a59f848e0dc071ba2977d3a2122006268.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ab905d67956153bb70c7607d7ac07ec00.html">Function transform_vars_shift_evaluate_function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ab905d67956153bb70c7607d7ac07ec00.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa2a58c3cee81e2de848bf3467a3fa91d.html">Function transform_vars_x_hat_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1aa2a58c3cee81e2de848bf3467a3fa91d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a65ba1aa534b34e82a8b0d2e9f307a375.html">Function transform_vars_x_hat_generic_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1a65ba1aa534b34e82a8b0d2e9f307a375.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ad2f9576703436e7d7c0515250979ad9a.html">Function transform_vars_z_hat_evaluate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_coco__transformation__vars_8hpp_1ad2f9576703436e7d7c0515250979ad9a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_suite__bbob__legacy__code_8hpp_1a973742d29d384e21661bda90875ccf39.html">Variable coco_pi</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_suite__bbob__legacy__code_8hpp_1a973742d29d384e21661bda90875ccf39.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__platform_8h_1abfb74516c005d04fc05414f90bc648de.html">Variable IOHprofiler_path_separator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__platform_8h_1abfb74516c005d04fc05414f90bc648de.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1a49324795993510860e3aba2d02d48b0d.html">Variable max_dimension</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1a49324795993510860e3aba2d02d48b0d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1ae2fca66559205cf0deddfdc3fffc7140.html">Variable max_number_of_problem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__configuration_8h_1ae2fca66559205cf0deddfdc3fffc7140.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1ad468cb10d7903bd52289143ef041b5de.html">Variable regBBOB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1ad468cb10d7903bd52289143ef041b5de.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a12fdf8047326b276d6cc0acb99983467.html">Variable regIsing_1D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a12fdf8047326b276d6cc0acb99983467.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af7085616ed4cb9129461172d510508c9.html">Variable regIsing_2D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af7085616ed4cb9129461172d510508c9.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a5850b8b0df8907ee88a997cbfa4e1545.html">Variable regIsing_Triangle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a5850b8b0df8907ee88a997cbfa4e1545.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a319923dfcb86f5cc128cb14b507bf827.html">Variable regLABS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a319923dfcb86f5cc128cb14b507bf827.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7206b5da762ae2dd9c1528e989ca7488.html">Variable regLeadingOnes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7206b5da762ae2dd9c1528e989ca7488.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1afc288963bc5b69967bcac19105b30879.html">Variable regLeadingOnes_Dummy1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1afc288963bc5b69967bcac19105b30879.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a8a009ad28ccb0e038a71a5a28acf0d2a.html">Variable regLeadingOnes_Dummy2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a8a009ad28ccb0e038a71a5a28acf0d2a.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a53ca5e56bfa668c103766aed0f875290.html">Variable regLeadingOnes_Epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a53ca5e56bfa668c103766aed0f875290.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1ac81b583258547a2937140537b74d19e2.html">Variable regLeadingOnes_Neutrality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1ac81b583258547a2937140537b74d19e2.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7d4da954ba8bd6a216e392a0b545c5cd.html">Variable regLeadingOnes_Ruggedness1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a7d4da954ba8bd6a216e392a0b545c5cd.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0090ef095459dfe2671a840172b9abce.html">Variable regLeadingOnes_Ruggedness2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0090ef095459dfe2671a840172b9abce.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4968411dc3f4c93789cd5e30d499f004.html">Variable regLeadingOnes_Ruggedness3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4968411dc3f4c93789cd5e30d499f004.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0c4bb6d8c51c39c261ffefc8ebf012ad.html">Variable regLinear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a0c4bb6d8c51c39c261ffefc8ebf012ad.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af5e46930d8db5a621405fd3ec3e6b5d7.html">Variable regMIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af5e46930d8db5a621405fd3ec3e6b5d7.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a3835806ce6f29fc118fe12f2d86d83d3.html">Variable regNQueens</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a3835806ce6f29fc118fe12f2d86d83d3.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4e7f8a0425b911bc0f1804223036e18c.html">Variable regOneMax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a4e7f8a0425b911bc0f1804223036e18c.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aecd150c4de053dd679db8403a203d248.html">Variable regOneMax_Dummy1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aecd150c4de053dd679db8403a203d248.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a83ceed7cda41cedb03487003e8f349e9.html">Variable regOneMax_Dummy2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a83ceed7cda41cedb03487003e8f349e9.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a2f325afb1dd4bf17bf576caebfd2d153.html">Variable regOneMax_Epistasis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a2f325afb1dd4bf17bf576caebfd2d153.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af165c30318c4983c23effe12a65e4df2.html">Variable regOneMax_Neutrality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1af165c30318c4983c23effe12a65e4df2.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aa930a6bd7352eac42f6eb31d0587dad9.html">Variable regOneMax_Ruggedness1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1aa930a6bd7352eac42f6eb31d0587dad9.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a11990cc94de2fa0f790a5f800a627a70.html">Variable regOneMax_Ruggedness2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1a11990cc94de2fa0f790a5f800a627a70.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1abfc52771fb25b89b4787a0aefbde3a15.html">Variable regOneMax_Ruggedness3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__problems_8hpp_1abfc52771fb25b89b4787a0aefbde3a15.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1acbdc1d9ef309da360a5de9f7d02c872f.html">Variable regPBO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__all__suites_8hpp_1acbdc1d9ef309da360a5de9f7d02c872f.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable__i_o_hprofiler__problem_8h_1a8e01e908e41e6270ffd9b9be2ce64cb8.html">Variable transformation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable__i_o_hprofiler__problem_8h_1a8e01e908e41e6270ffd9b9be2ce64cb8.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="defines">
+<h3>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8cpp_1ad84318ad71c20e7b5a4af037e3a330d5.html">Define _IOHPROFILER_COMMON_CPP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8cpp_1ad84318ad71c20e7b5a4af037e3a330d5.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a6109158b8a720c7e8b1bcc516682cddf.html">Define DEFAULT_DIMENSION</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a6109158b8a720c7e8b1bcc516682cddf.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a3d0780778ed0748fc4769d998edaf185.html">Define DEFAULT_INSTANCE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a3d0780778ed0748fc4769d998edaf185.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ab4da29b2c029e05522638c638f1db25c.html">Define DEFAULT_PROBLEM_ID</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ab4da29b2c029e05522638c638f1db25c.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2de21eb687a4fd2ea6c1d5d7fb3a6e8d.html">Define DEFAULT_SEED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2de21eb687a4fd2ea6c1d5d7fb3a6e8d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_f__weierstrass_8hpp_1a18749745931e068554050348303e1c0d.html">Define F_WEIERSTRASS_SUMMANDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_f__weierstrass_8hpp_1a18749745931e068554050348303e1c0d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a61b1f3d36ae91d52664e0d8019b0552b.html">Define IOH_PI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a61b1f3d36ae91d52664e0d8019b0552b.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2f39e943462a370926c15bac5919f3ba.html">Define IOHPROFILER_LONG_LAG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a2f39e943462a370926c15bac5919f3ba.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1aebdf5dc0572ce5a3e8c957220f3e07c2.html">Define IOHprofiler_MAX_DIMENSION</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1aebdf5dc0572ce5a3e8c957220f3e07c2.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a95e2e1ac04fcb791dd078a8a64d84167.html">Define IOHprofiler_NORMAL_POLAR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a95e2e1ac04fcb791dd078a8a64d84167.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a16bc7f529c324e050561e97c82ab788d.html">Define IOHprofiler_PATH_MAX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1a16bc7f529c324e050561e97c82ab788d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1aae7a5b8cad1936da10175ab1d6cb3e1a.html">Define IOHPROFILER_SHORT_LAG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1aae7a5b8cad1936da10175ab1d6cb3e1a.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ad4d796b98c583d49e83adabd74a63bf6.html">Define MAX_BUFFER_SIZE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__common_8h_1ad4d796b98c583d49e83adabd74a63bf6.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1a59bea9bfad99ad3e51f97667d7c5b18f.html">Define MAXKEYNUMBER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1a59bea9bfad99ad3e51f97667d7c5b18f.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1ae310f74f793edeb882f0c2d8d8b50bb8.html">Define MAXLINESIZE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__configuration_8h_1ae310f74f793edeb882f0c2d8d8b50bb8.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1ab23f1b3c64f3eb9b6321ad80a3aa700f.html">Define RND_MOD_MULTIPLIER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1ab23f1b3c64f3eb9b6321ad80a3aa700f.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a25a3b1332e15355d3ce940b2b9711824.html">Define RND_MODULUS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a25a3b1332e15355d3ce940b2b9711824.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a6db8e7e89b4ccba78b78bae2fa4cae16.html">Define RND_MODULUS_DIV</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a6db8e7e89b4ccba78b78bae2fa4cae16.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a4a9daae28c93665de8531ea553a1a3eb.html">Define RND_MULTIPLIER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define__i_o_hprofiler__random_8h_1a4a9daae28c93665de8531ea553a1a3eb.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_suite__bbob__legacy__code_8hpp_1a30f5ab8c8eebf32a5ef95bf3d5297c6d.html">Define SUITE_BBOB2009_MAX_DIM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_suite__bbob__legacy__code_8hpp_1a30f5ab8c8eebf32a5ef95bf3d5297c6d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typedefs">
+<h3>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__i_o_hprofiler__class__generator_8h_1a2971ef230f593894266554092d5bca4c.html">Typedef defaultIDKeyType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__i_o_hprofiler__class__generator_8h_1a2971ef230f593894266554092d5bca4c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_f__gallagher21_8hpp_1af0bac0f1113d1810ec11a4ea08affcc3.html">Typedef F_GALLAGHER_PERMUTATION_T</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_f__gallagher21_8hpp_1af0bac0f1113d1810ec11a4ea08affcc3.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_f__gallagher101_8hpp_1a605accbff34f39b4eef3935aaa2cabf1.html">Typedef F_GALLAGHER_PERMUTATION_T1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_f__gallagher101_8hpp_1a605accbff34f39b4eef3935aaa2cabf1.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__i_o_hprofiler__configuration_8h_1aea3cb56ac9b0612afc040462b05b390a.html">Typedef linecontent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__i_o_hprofiler__configuration_8h_1aea3cb56ac9b0612afc040462b05b390a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a637e30d728990d4faae94a7d357a01f4.html">Typedef PROBLEM_ID_NAME</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a637e30d728990d4faae94a7d357a01f4.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a53e7653f098d0336dca41cf3e9c43d3f.html">Typedef PROBLEM_NAME_ID</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef__i_o_hprofiler__suite_8h_1a53e7653f098d0336dca41cf3e9c43d3f.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structf__gallagher__permutation__t.html" class="btn btn-neutral float-right" title="Struct f_gallagher_permutation_t" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to IOHexperimenter’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, F. Ye; D. Vermetten; H. Wang; C. Doerr; T. Bäck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

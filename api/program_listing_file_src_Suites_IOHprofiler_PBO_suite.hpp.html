@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File IOHprofiler_PBO_suite.hpp &mdash; IOHexperimenter 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> IOHexperimenter
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IOHexperimenter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File IOHprofiler_PBO_suite.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_src_Suites_IOHprofiler_PBO_suite.hpp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-iohprofiler-pbo-suite-hpp">
+<span id="program-listing-file-src-suites-iohprofiler-pbo-suite-hpp"></span><h1>Program Listing for File IOHprofiler_PBO_suite.hpp<a class="headerlink" href="#program-listing-for-file-iohprofiler-pbo-suite-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_Suites_IOHprofiler_PBO_suite.hpp.html#file-src-suites-iohprofiler-pbo-suite-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/Suites/IOHprofiler_PBO_suite.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef _IOHPROFILER_PBO_SUITE_HPP</span>
+<span class="cp">#define _IOHPROFILER_PBO_SUITE_HPP</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_linear.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_dummy1.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_dummy2.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_neutrality.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_epistasis.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_ruggedness1.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_ruggedness2.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_one_max_ruggedness3.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_dummy1.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_dummy2.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_neutrality.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_epistasis.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_ruggedness1.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_ruggedness2.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_leading_ones_ruggedness3.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_labs.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_ising_ring.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_ising_torus.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_ising_triangular.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_MIS.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;f_N_queens.hpp&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;IOHprofiler_suite.h&quot;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nc">PBO_suite</span> <span class="o">:</span> <span class="k">public</span> <span class="n">IOHprofiler_suite</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">PBO_suite</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">problem_id</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">instance_id</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">23</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">problem_id</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">instance_id</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">dimension</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">IOHprofiler_set_suite_problem_id</span><span class="p">(</span><span class="n">problem_id</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_instance_id</span><span class="p">(</span><span class="n">instance_id</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_dimension</span><span class="p">(</span><span class="n">dimension</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_name</span><span class="p">(</span><span class="s">&quot;PBO&quot;</span><span class="p">);</span>
+    <span class="n">registerProblem</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="n">PBO_suite</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">problem_id</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">instance_id</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">dimension</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">problem_id</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">problem_id</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">problem_id</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">23</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">IOH_error</span><span class="p">(</span><span class="s">&quot;problem_id &quot;</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">problem_id</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="s">&quot; is not in PBO_suite&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">instance_id</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">instance_id</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">instance_id</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">IOH_error</span><span class="p">(</span><span class="s">&quot;instance_id &quot;</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">instance_id</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="s">&quot; is not in PBO_suite&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">dimension</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">dimension</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">dimension</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">20000</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">IOH_error</span><span class="p">(</span><span class="s">&quot;dimension &quot;</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">dimension</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="s">&quot; is not in PBO_suite&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">IOHprofiler_set_suite_problem_id</span><span class="p">(</span><span class="n">problem_id</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_instance_id</span><span class="p">(</span><span class="n">instance_id</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_dimension</span><span class="p">(</span><span class="n">dimension</span><span class="p">);</span>
+    <span class="n">IOHprofiler_set_suite_name</span><span class="p">(</span><span class="s">&quot;PBO&quot;</span><span class="p">);</span>
+    <span class="n">registerProblem</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">registerProblem</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax</span><span class="o">&gt;</span> <span class="n">regOneMax</span><span class="p">(</span><span class="s">&quot;OneMax&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Dummy1</span><span class="o">&gt;</span> <span class="n">regOneMax_Dummy1</span><span class="p">(</span><span class="s">&quot;OneMax_Dummy1&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Dummy2</span><span class="o">&gt;</span> <span class="n">regOneMax_Dummy2</span><span class="p">(</span><span class="s">&quot;OneMax_Dummy2&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Epistasis</span><span class="o">&gt;</span> <span class="n">regOneMax_Epistasis</span><span class="p">(</span><span class="s">&quot;OneMax_Epistasis&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Neutrality</span><span class="o">&gt;</span> <span class="n">regOneMax_Neutrality</span><span class="p">(</span><span class="s">&quot;OneMax_Neutrality&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Ruggedness1</span><span class="o">&gt;</span> <span class="n">regOneMax_Ruggedness1</span><span class="p">(</span><span class="s">&quot;OneMax_Ruggedness1&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Ruggedness2</span><span class="o">&gt;</span> <span class="n">regOneMax_Ruggedness2</span><span class="p">(</span><span class="s">&quot;OneMax_Ruggedness2&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">OneMax_Ruggedness3</span><span class="o">&gt;</span> <span class="n">regOneMax_Ruggedness3</span><span class="p">(</span><span class="s">&quot;OneMax_Ruggedness3&quot;</span><span class="p">);</span>
+
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes</span><span class="o">&gt;</span> <span class="n">regLeadingOnes</span><span class="p">(</span><span class="s">&quot;LeadingOnes&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Dummy1</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Dummy1</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Dummy1&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Dummy2</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Dummy2</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Dummy2&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Epistasis</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Epistasis</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Epistasis&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Neutrality</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Neutrality</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Neutrality&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Ruggedness1</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Ruggedness1</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Ruggedness1&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Ruggedness2</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Ruggedness2</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Ruggedness2&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LeadingOnes_Ruggedness3</span><span class="o">&gt;</span> <span class="n">regLeadingOnes_Ruggedness3</span><span class="p">(</span><span class="s">&quot;LeadingOnes_Ruggedness3&quot;</span><span class="p">);</span>
+
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">Linear</span><span class="o">&gt;</span> <span class="n">regLinear</span><span class="p">(</span><span class="s">&quot;Linear&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">MIS</span><span class="o">&gt;</span> <span class="n">regMIS</span><span class="p">(</span><span class="s">&quot;MIS&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">LABS</span><span class="o">&gt;</span> <span class="n">regLABS</span><span class="p">(</span><span class="s">&quot;LABS&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">NQueens</span><span class="o">&gt;</span> <span class="n">regNQueens</span><span class="p">(</span><span class="s">&quot;NQueens&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">Ising_Ring</span><span class="o">&gt;</span> <span class="n">regIsing_Ring</span><span class="p">(</span><span class="s">&quot;Ising_Ring&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">Ising_Torus</span><span class="o">&gt;</span> <span class="n">regIsing_Torus</span><span class="p">(</span><span class="s">&quot;Ising_Torus&quot;</span><span class="p">);</span>
+    <span class="n">registerInFactory</span><span class="o">&lt;</span><span class="n">IOHprofiler_problem</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="n">Ising_Triangular</span><span class="o">&gt;</span> <span class="n">regIsing_Triangular</span><span class="p">(</span><span class="s">&quot;Ising_Triangular&quot;</span><span class="p">);</span>
+
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;OneMax&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s">&quot;LeadingOnes&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="s">&quot;Linear&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="s">&quot;OneMax_Dummy1&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="s">&quot;OneMax_Dummy2&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="s">&quot;OneMax_Neutrality&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="s">&quot;OneMax_Epistasis&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="s">&quot;OneMax_Ruggedness1&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="s">&quot;OneMax_Ruggedness2&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="s">&quot;OneMax_Ruggedness3&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Dummy1&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Dummy2&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Neutrality&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Epistasis&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Ruggedness1&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Ruggedness2&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="s">&quot;LeadingOnes_Ruggedness3&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="s">&quot;LABS&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span><span class="s">&quot;MIS&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="s">&quot;Ising_Ring&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="s">&quot;Ising_Torus&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="s">&quot;Ising_Triangular&quot;</span><span class="p">);</span>
+    <span class="n">mapIDTOName</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="s">&quot;NQueens&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">static</span> <span class="n">PBO_suite</span> <span class="o">*</span> <span class="n">createInstance</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="n">PBO_suite</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="k">static</span> <span class="n">PBO_suite</span> <span class="o">*</span> <span class="n">createInstance</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">problem_id</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">instance_id</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">dimension</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="n">PBO_suite</span><span class="p">(</span><span class="n">problem_id</span><span class="p">,</span> <span class="n">instance_id</span><span class="p">,</span> <span class="n">dimension</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="cp">#endif </span><span class="c1">//_IOHPROFILER_PBO_SUITE_H</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, F. Ye; D. Vermetten; H. Wang; C. Doerr; T. Bäck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

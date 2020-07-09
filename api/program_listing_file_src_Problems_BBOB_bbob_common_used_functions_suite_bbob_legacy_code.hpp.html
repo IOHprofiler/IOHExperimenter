@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File suite_bbob_legacy_code.hpp &mdash; IOHexperimenter 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> IOHexperimenter
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">Library API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IOHexperimenter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File suite_bbob_legacy_code.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_src_Problems_BBOB_bbob_common_used_functions_suite_bbob_legacy_code.hpp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-suite-bbob-legacy-code-hpp">
+<span id="program-listing-file-src-problems-bbob-bbob-common-used-functions-suite-bbob-legacy-code-hpp"></span><h1>Program Listing for File suite_bbob_legacy_code.hpp<a class="headerlink" href="#program-listing-for-file-suite-bbob-legacy-code-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_Problems_BBOB_bbob_common_used_functions_suite_bbob_legacy_code.hpp.html#file-src-problems-bbob-bbob-common-used-functions-suite-bbob-legacy-code-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/Problems/BBOB/bbob_common_used_functions/suite_bbob_legacy_code.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef _SUITE_BBOB_LEGACY_CODE_HPP</span>
+<span class="cp">#define _SUITE_BBOB_LEGACY_CODE_HPP</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;IOHprofiler_random.h&quot;</span><span class="cp"></span>
+
+<span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">coco_pi</span> <span class="o">=</span> <span class="mf">3.14159265358979323846</span><span class="p">;</span>
+<span class="cp">#define SUITE_BBOB2009_MAX_DIM 40</span>
+
+<span class="k">static</span> <span class="kt">double</span> <span class="nf">bbob2009_fmin</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span> <span class="o">?</span> <span class="nl">a</span> <span class="p">:</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">double</span> <span class="nf">bbob2009_fmax</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="o">?</span> <span class="nl">a</span> <span class="p">:</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">double</span> <span class="nf">bbob2009_round</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_unif</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">r</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">N</span><span class="p">,</span> <span class="kt">long</span> <span class="n">inseed</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* generates N uniform numbers with starting seed */</span>
+  <span class="kt">long</span> <span class="n">aktseed</span><span class="p">;</span>
+  <span class="kt">long</span> <span class="n">tmp</span><span class="p">;</span>
+  <span class="kt">long</span> <span class="n">rgrand</span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
+  <span class="kt">long</span> <span class="n">aktrand</span><span class="p">;</span>
+  <span class="kt">long</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">r</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">N</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">inseed</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">inseed</span> <span class="o">=</span> <span class="o">-</span><span class="n">inseed</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">inseed</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">inseed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">aktseed</span> <span class="o">=</span> <span class="n">inseed</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">39</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">floor</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span> <span class="n">aktseed</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="mi">127773</span><span class="p">);</span>
+    <span class="n">aktseed</span> <span class="o">=</span> <span class="mi">16807</span> <span class="o">*</span> <span class="p">(</span><span class="n">aktseed</span> <span class="o">-</span> <span class="n">tmp</span> <span class="o">*</span> <span class="mi">127773</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2836</span> <span class="o">*</span> <span class="n">tmp</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">aktseed</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="n">aktseed</span> <span class="o">=</span> <span class="n">aktseed</span> <span class="o">+</span> <span class="mi">2147483647</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">)</span>
+      <span class="n">rgrand</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aktseed</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">aktrand</span> <span class="o">=</span> <span class="n">rgrand</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">floor</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span> <span class="n">aktseed</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="mi">127773</span><span class="p">);</span>
+    <span class="n">aktseed</span> <span class="o">=</span> <span class="mi">16807</span> <span class="o">*</span> <span class="p">(</span><span class="n">aktseed</span> <span class="o">-</span> <span class="n">tmp</span> <span class="o">*</span> <span class="mi">127773</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2836</span> <span class="o">*</span> <span class="n">tmp</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">aktseed</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="n">aktseed</span> <span class="o">=</span> <span class="n">aktseed</span> <span class="o">+</span> <span class="mi">2147483647</span><span class="p">;</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">floor</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span> <span class="n">aktrand</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="mi">67108865</span><span class="p">);</span>
+    <span class="n">aktrand</span> <span class="o">=</span> <span class="n">rgrand</span><span class="p">[</span><span class="n">tmp</span><span class="p">];</span>
+    <span class="n">rgrand</span><span class="p">[</span><span class="n">tmp</span><span class="p">]</span> <span class="o">=</span> <span class="n">aktseed</span><span class="p">;</span>
+    <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">aktrand</span> <span class="o">/</span> <span class="mf">2.147483647e9</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mf">0.</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1e-99</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_reshape</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">B</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">vector</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">m</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">size_t</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">;</span>
+  <span class="n">B</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">m</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">n</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">vector</span><span class="p">[</span><span class="n">j</span> <span class="o">*</span> <span class="n">m</span> <span class="o">+</span> <span class="n">i</span><span class="p">];</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_gauss</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">g</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">N</span><span class="p">,</span> <span class="k">const</span> <span class="kt">long</span> <span class="n">seed</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">size_t</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">g</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">N</span><span class="p">);</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">uniftmp</span><span class="p">(</span><span class="mi">6000</span><span class="p">);</span>
+  <span class="n">assert</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">6000</span><span class="p">);</span>
+  <span class="n">bbob2009_unif</span><span class="p">(</span><span class="n">uniftmp</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">N</span><span class="p">,</span> <span class="n">seed</span><span class="p">);</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">uniftmp</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">coco_pi</span> <span class="o">*</span> <span class="n">uniftmp</span><span class="p">[</span><span class="n">N</span> <span class="o">+</span> <span class="n">i</span><span class="p">]);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mf">0.</span><span class="p">)</span>
+      <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1e-99</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_compute_rotation</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">B</span><span class="p">,</span> <span class="k">const</span> <span class="kt">long</span> <span class="n">seed</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">DIM</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* To ensure temporary data fits into gvec */</span>
+  <span class="kt">double</span> <span class="n">prod</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">gvect</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+  <span class="kt">long</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span> <span class="cm">/* Loop over pairs of column vectors. */</span>
+
+  <span class="n">bbob2009_gauss</span><span class="p">(</span><span class="n">gvect</span><span class="p">,</span> <span class="n">DIM</span> <span class="o">*</span> <span class="n">DIM</span><span class="p">,</span> <span class="n">seed</span><span class="p">);</span>
+  <span class="n">bbob2009_reshape</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">gvect</span><span class="p">,</span> <span class="n">DIM</span><span class="p">,</span> <span class="n">DIM</span><span class="p">);</span>
+  <span class="cm">/*1st coordinate is row, 2nd is column.*/</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">prod</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">prod</span> <span class="o">+=</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+      <span class="k">for</span> <span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="n">prod</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">prod</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+      <span class="n">prod</span> <span class="o">+=</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+      <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">/=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">prod</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_copy_rotation_matrix</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">rot</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">M</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">DIM</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">size_t</span> <span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="o">*</span><span class="n">current_row</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="o">++</span><span class="n">row</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">column</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="o">++</span><span class="n">column</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">M</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">rot</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">b</span><span class="p">[</span><span class="n">row</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">bbob2009_compute_xopt</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">xopt</span><span class="p">,</span> <span class="k">const</span> <span class="kt">long</span> <span class="n">seed</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">DIM</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">long</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">bbob2009_unif</span><span class="p">(</span><span class="n">xopt</span><span class="p">,</span> <span class="n">DIM</span><span class="p">,</span> <span class="n">seed</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">DIM</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">xopt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="n">floor</span><span class="p">(</span><span class="mf">1e4</span> <span class="o">*</span> <span class="n">xopt</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="mf">1e4</span> <span class="o">-</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">xopt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mf">0.0</span><span class="p">)</span>
+      <span class="n">xopt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1e-5</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">double</span> <span class="nf">bbob2009_compute_fopt</span><span class="p">(</span><span class="k">const</span> <span class="kt">size_t</span> <span class="n">function</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">instance</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">long</span> <span class="n">rseed</span><span class="p">,</span> <span class="n">rrseed</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">gval</span><span class="p">,</span> <span class="n">gval2</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">18</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">17</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">101</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">102</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">103</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">107</span>
+      <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">108</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">109</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">104</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">105</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">106</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">110</span>
+      <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">111</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">112</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">113</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">114</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">115</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">116</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">117</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">118</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">119</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">120</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">121</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">122</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">123</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">124</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">17</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">125</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">126</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">127</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">19</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">function</span> <span class="o">==</span> <span class="mi">128</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">129</span> <span class="o">||</span> <span class="n">function</span> <span class="o">==</span> <span class="mi">130</span><span class="p">)</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="mi">21</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="n">rseed</span> <span class="o">=</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span> <span class="n">function</span><span class="p">;</span>
+
+  <span class="n">rrseed</span> <span class="o">=</span> <span class="n">rseed</span> <span class="o">+</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span> <span class="p">(</span><span class="mi">10000</span> <span class="o">*</span> <span class="n">instance</span><span class="p">);</span>
+  <span class="n">bbob2009_gauss</span><span class="p">(</span><span class="n">gval</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">rrseed</span><span class="p">);</span>
+  <span class="n">bbob2009_gauss</span><span class="p">(</span><span class="n">gval2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">rrseed</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">bbob2009_fmin</span><span class="p">(</span><span class="mf">1000.</span><span class="p">,</span> <span class="n">bbob2009_fmax</span><span class="p">(</span><span class="o">-</span><span class="mf">1000.</span><span class="p">,</span> <span class="n">bbob2009_round</span><span class="p">(</span><span class="mf">100.</span> <span class="o">*</span> <span class="mf">100.</span> <span class="o">*</span> <span class="n">gval</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">gval2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="mf">100.</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, F. Ye; D. Vermetten; H. Wang; C. Doerr; T. Bäck
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

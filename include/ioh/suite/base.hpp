@@ -58,12 +58,12 @@ namespace ioh
 			}
 
 
-			/// \fn loadProblems()
+			/// \fn virtual void loadProblems()
 			/// \brief Allocating memory and creating instances of problems to be included in the suite.
 			///
 			/// Before acquiring a problem from the suite, this function must be invoked.
 			/// Otherwise the list of problem is empty.
-			void load_problem()
+			virtual void load_problem()
 			{
 				if (this->size() != 0)
 				{
@@ -228,6 +228,22 @@ namespace ioh
 				return this->suite_name;
 			}
 
+			bool get_load_problem_flag() const {
+   			return this->load_problem_flag; 
+ 			}
+
+			bool get_get_problem_flag() const {
+				return this->get_problem_flag;
+			}
+
+			size_t get_size_of_problem_list() const {
+				return this->size_of_problem_list;
+			}
+
+			size_t get_problem_list_index() const {
+				return this->problem_list_index;
+			}
+
 			void set_suite_problem_id(const std::vector<int>& problem_id)
 			{
 				common::copy_vector(problem_id, this->problem_id);
@@ -250,6 +266,22 @@ namespace ioh
 			void set_suite_name(std::string suite_name)
 			{
 				this->suite_name = suite_name;
+			}
+
+			void set_load_problem_flag(const bool flag) {
+				this->load_problem_flag = flag;
+			}
+
+			void set_get_problem_flag(const bool flag) {
+				this->get_problem_flag = flag;
+			}
+
+			void set_size_of_problem_list(const size_t size_of_problem_list) {
+				this->size_of_problem_list = size_of_problem_list;
+			}
+
+			void set_problem_list_index(const size_t problem_list_index) {
+				this->problem_list_index = problem_list_index;
 			}
 
 			void mapIDTOName(int id, std::string name)

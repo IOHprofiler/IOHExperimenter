@@ -3,6 +3,7 @@
 #include "base.hpp"
 #include "observer.hpp"
 #include "ioh/common.hpp"
+#include "ioh/experiment.hpp"
 
 #include <array>
 

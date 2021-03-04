@@ -228,6 +228,9 @@ namespace ioh {
 
                 if (static_cast<int>(x.size()) != this->number_of_variables) {
                     common::log::warning("The dimension of solution is incorrect.");
+                    // common::log::warning(std::to_string(x.size()));
+                    // common::log::warning(std::to_string(this->number_of_variables));
+
                     if (this->maximization_minimization_flag == common::OptimizationType::maximization) {
                         this->raw_objectives[0] = std::numeric_limits<double>::lowest();
                         this->transformed_objectives[0] = std::numeric_limits<double>::lowest();
